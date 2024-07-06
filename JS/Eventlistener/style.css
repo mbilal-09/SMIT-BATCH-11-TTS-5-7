@@ -1,0 +1,23 @@
+.box {
+  height: 300px;
+  width: 300px;
+  border-radius: 6px;
+  margin: 10px auto;
+  border: 1px solid burlywood;
+}
+
+.container {
+  height: 80px;
+  width: 300px;
+  margin: 5px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid burlywood;
+}
+
+.sm-box {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}

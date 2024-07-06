@@ -1,0 +1,121 @@
+* {
+  /* border: 1px solid brown; */
+}
+
+h1 {
+  min-width: 300px;
+  background-color: beige;
+  /* width: 200px; */
+  max-width: 350px;
+  text-align: center;
+  /* box ko center mein krne ke lye */
+  margin: 12px auto;
+}
+
+li {
+  margin: 4px;
+  padding: 5px;
+}
+
+span {
+  padding: 0px 20px;
+}
+
+/* p {
+  background-color: chocolate;
+}
+
+b {
+  background-color: burlywood;
+}
+
+i {
+  background-color: beige;
+} */
+
+
+.parent {
+  width: 500px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.box {
+  min-height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  display: inline-block;
+  margin: 5px;
+}
+
+.box:hover {
+  color: white;
+  background-color: black;
+}
+
+.box1 {
+  background-color: beige;
+  border-color: beige;
+}
+
+.box2 {
+  background-color: chocolate;
+  border-color: chocolate;
+}
+
+.box3 {
+  background-color: brown;
+  border-color: brown;
+}
+
+.icon_box {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  margin: 8px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px gray;
+  font-family: 'Rubik Maps', system-ui;
+  }
+
+.tiktok:hover {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+
+.github:hover {
+  color: #fff;
+  background-color: purple;
+  border-color: purple;
+
+}
+
+.youtube:hover {
+  color: #fff;
+  background-color: red;
+  border-color: red;
+
+}
+
+h4 {
+  margin: 0px;
+  margin-top: 4px;
+}
+
+i {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 13px
+}
+
+.grandparent {
+  min-height: 300px;
+  background-image: linear-gradient(to bottom, rgb(190, 208, 231), rgb(242, 244, 247));
+  max-height: 6000px;
+  border: 1px solid black;
+  /* overflow: hidden; */
+  overflow-y: scroll;
+}

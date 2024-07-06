@@ -1,0 +1,27 @@
+.nav-link:hover {
+  color: blueviolet !important;
+}
+
+.carousel-item > img {
+  height: 400px !important ;
+}
+
+.info_vector {
+  height: 300px;
+  width: 300px;
+  border-radius: 15px;
+}
+
+.accordion-item,
+.accordion-header {
+  width: 100% !important;
+}
+
+.card > img {
+  height: 230px !important;
+}
+
+.card {
+  margin-top: 12px;
+  margin: 12px auto;
+}

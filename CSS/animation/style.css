@@ -1,0 +1,57 @@
+@keyframes text-animation {
+  0% {
+    color: black;
+    font-size: 32px;
+  }
+  50% {
+    color: aqua;
+    transform: scale(1.3);
+    transition: 1s;
+  }
+  100% {
+    color: blue;
+    font-size: 32px;
+  }
+}
+
+@keyframes rotate-animation {
+  0% {
+  }
+  50% {
+    transform: rotate(180deg);
+    transition: 1s;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 20px;
+  animation-name: text-animation !important;
+  animation-duration: 2s;
+  animation-iteration-count: 4;
+  animation-delay: 3s;
+}
+
+.parent {
+  /* height: 300px; */
+  max-width: 800px;
+  position: relative;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.parent > div > img {
+  height: 300px;
+  width: 100%;
+}
+.box_one:hover {
+  animation-name: rotate-animation;
+  animation-duration: 1.5s;
+  /* animation-delay: 3s; */
+  animation-iteration-count: 2;
+}

@@ -1,0 +1,15 @@
+
+i{
+    font-size: 25px;
+    padding: 0px 4px;
+    cursor: pointer;
+}
+
+.icon_row:hover{
+    background-color: lightgray;
+}
+
+.cards_container{
+    overflow-y: scroll !important;
+    height: 100% !important;
+}

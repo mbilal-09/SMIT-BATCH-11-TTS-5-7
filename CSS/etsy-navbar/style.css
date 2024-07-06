@@ -1,0 +1,152 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+nav {
+  box-shadow: 0px 1px 1px lightgray;
+  padding-top: 10px;
+}
+.top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.header_logo {
+  height: 40px;
+  width: 90px;
+  fill: orange;
+}
+
+.search_container {
+  width: 65%;
+  border: 1px black solid;
+  border-radius: 25px;
+  height: 40px;
+  display: flex;
+  overflow: hidden;
+}
+
+.search_container > input {
+  margin-left: 10px;
+  flex-grow: 1;
+  border: none;
+  outline: none;
+}
+
+.category_container {
+  padding: 7px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  display: block;
+  width: 110px;
+}
+
+.category_container > i {
+  margin-right: 4px;
+}
+
+.category_container:hover {
+  background-color: rgb(231, 230, 230);
+  transition: all 0.2s;
+}
+
+.search_icon {
+  background-color: orange;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.bottom > p {
+  cursor: pointer;
+  padding: 7px 10px;
+  border-radius: 25px;
+  margin-top: 4px;
+}
+
+.sign_in {
+  margin: 0px 10px;
+  width: 60px;
+  text-align: center;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.icon:hover {
+  background-color: skyblue;
+  cursor: pointer;
+  color: white;
+}
+
+.bottom > p:hover {
+  background-color: rgb(231, 230, 230);
+  transition: all 0.2s;
+}
+
+.bottom_search {
+  display: flex;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+@media (max-width: 900px) {
+  .bottom {
+    display: none;
+  }
+  .bottom_search {
+    display: flex;
+  }
+  .top {
+    justify-content: space-between;
+  }
+
+  .top > .category_container {
+    display: none;
+  }
+  .top > .search_container {
+    display: none;
+  }
+}
+
+.grid_container {
+  max-width: 1200px;
+  margin: 12px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.grid_container > div {
+  text-align: left;
+}
+
+.info_section {
+  background-color: bisque;
+  padding: 30px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .grid_container {
+    grid-template-columns: 1fr;
+  }
+  .grid_container > div {
+    text-align: center;
+  }
+}

@@ -1,0 +1,34 @@
+.parent {
+  display: flex;
+}
+
+.child {
+  width: 50%;
+}
+
+.left {
+  background-color: aqua;
+}
+.right {
+  background-color: bisque;
+  text-align: center;
+}
+
+.header_img {
+  height: 300px;
+  width: 300px;
+}
+
+@media (max-width: 640px) {
+  .parent {
+    flex-direction: column-reverse;
+  }
+  .child {
+    width: 100%;
+    text-align: center;
+  }
+
+  .right {
+    display: none;
+  }
+}

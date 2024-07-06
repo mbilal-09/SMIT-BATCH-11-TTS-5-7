@@ -1,0 +1,45 @@
+<<<<<<< HEAD
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  margin: 0px auto;
+  width: 80px;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  margin: 5px;
+  transition: 0.2s ease-in all;
+}
+=======
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  margin: 0px auto;
+  width: 80px;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  margin: 5px;
+  transition: 0.2s ease-in all;
+}
+>>>>>>> f481ebeae6a7bbe9aaaccc19c58be9e328734726

@@ -1,0 +1,35 @@
+table {
+  width: 900px;
+  margin: 0px auto;
+  border-collapse: collapse;
+}
+
+.box_container {
+  display: flex;
+  width: 900px;
+  margin: 8px auto;
+}
+
+.box {
+  flex: 1;
+  display: flex;
+  border: 1px solid #ccc;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  margin: 5px;
+}
+
+td,
+th {
+  width: 150px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+#present,
+#absent,
+#leave {
+  padding-left: 6px;
+  font-weight: bold;
+}

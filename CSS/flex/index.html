@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Flex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <span class="logo">
+        <i class="fa-solid fa-utensils"></i>
+        Foodie
+      </span>
+
+      <div>
+        <span class="nav_item food">
+          <i class="fa-solid fa-pizza-slice"></i> Pizza
+        </span>
+        <span class="nav_item food">
+          <i class="fa-solid fa-burger"></i> Burger
+        </span>
+      </div>
+
+      <div>
+        <i class="fa-regular fa-bell nav_item"></i>
+        <i class="fa-solid fa-cart-shopping nav_item"></i>
+      </div>
+    </nav>
+
+    <h2 class="heading">Cities</h2>
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+      <div class="city_box">
+        <img
+          class="city_img"
+          src="https://images.unsplash.com/photo-1612556534321-fcc747ff3dea?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8a2FyYWNoaXxlbnwwfHwwfHx8MA%3D%3D"
+        />
+        <div class="desc_box">
+          <span class="city_name">Karachi</span>
+          <br />
+          <span class="city_desc">The City Of Lights</span>
+        </div>
+      </div>
+
+      <div class="city_box">
+        <img
+          class="city_img"
+          src="https://images.unsplash.com/photo-1612556534321-fcc747ff3dea?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8a2FyYWNoaXxlbnwwfHwwfHx8MA%3D%3D"
+        />
+        <div class="desc_box">
+          <span class="city_name">Karachi</span>
+          <br />
+          <span class="city_desc">The City Of Lights</span>
+        </div>
+      </div>
+      <div class="city_box">
+        <img
+          class="city_img"
+          src="https://images.unsplash.com/photo-1612556534321-fcc747ff3dea?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8a2FyYWNoaXxlbnwwfHwwfHx8MA%3D%3D"
+        />
+        <div class="desc_box">
+          <span class="city_name">Karachi</span>
+          <br />
+          <span class="city_desc">The City Of Lights</span>
+        </div>
+      </div>
+
+      <div class="city_box">
+        <img
+          class="city_img"
+          src="https://images.unsplash.com/photo-1612556534321-fcc747ff3dea?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8a2FyYWNoaXxlbnwwfHwwfHx8MA%3D%3D"
+        />
+        <div class="desc_box">
+          <span class="city_name">Karachi</span>
+          <br />
+          <span class="city_desc">The City Of Lights</span>
+        </div>
+      </div>
+
+      <div class="city_box">
+        <img
+          class="city_img"
+          src="https://images.unsplash.com/photo-1612556534321-fcc747ff3dea?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8a2FyYWNoaXxlbnwwfHwwfHx8MA%3D%3D"
+        />
+        <div class="desc_box">
+          <span class="city_name">Karachi</span>
+          <br />
+          <span class="city_desc">The City Of Lights</span>
+        </div>
+      </div>
+      <div class="city_box">
+        <img
+          class="city_img"
+          src="https://images.unsplash.com/photo-1612556534321-fcc747ff3dea?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8a2FyYWNoaXxlbnwwfHwwfHx8MA%3D%3D"
+        />
+        <div class="desc_box">
+          <span class="city_name">Karachi</span>
+          <br />
+          <span class="city_desc">The City Of Lights</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="position_absolute_parent">
+      <img
+        class="ps_child_1"
+        src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D"
+      />
+      <div class="ps_child_3">Free Delivery</div>
+      <div class="ps_child_4">500</div>
+      <h5 class="ps_child_2">The Dosani Kitchen</h5>
+      <p class="ps_child_2">
+        It comprises noodles in a coconut or yogurt based curry with spicy
+        chicken
+      </p>
+    </div> -->
+
+    <!-- <h2 class="heading">
+      Find things you'll love. Support independent sellers. Only on Foodie.
+    </h2> -->
+
+    <!-- <div class="cateogory_parent">
+      <div class="category_box">
+        <img
+          alt="pizza"
+          src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGl6emF8ZW58MHx8MHx8fDA%3D"
+        />
+        <span>Pizza</span>
+      </div>
+      <div class="category_box">
+        <img
+          alt="Karahi"
+          src="https://images.unsplash.com/photo-1603496987351-f84a3ba5ec85?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2FyYWhpfGVufDB8fDB8fHww"
+        />
+        <span>Karahi</span>
+      </div>
+      <div class="category_box">
+        <img
+          alt="pizza"
+          src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGl6emF8ZW58MHx8MHx8fDA%3D"
+        />
+        <span>Pizza</span>
+      </div>
+      <div class="category_box">
+        <img
+          alt="Burger"
+          src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHww"
+        />
+        <span>Burger</span>
+      </div>
+      <div class="category_box">
+        <img
+          alt="Tikka"
+          src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGlra2F8ZW58MHx8MHx8fDA%3D"
+        />
+        <span>Tikka</span>
+      </div>
+      <div class="category_box">
+        <img
+          alt="meal"
+          src="https://images.unsplash.com/photo-1576867757603-05b134ebc379?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVhbHxlbnwwfHwwfHx8MA%3D%3D"
+        />
+        <span>Meal</span>
+      </div>
+    </div> -->
+
+    <!-- <h2>Shop By Category</h2> -->
+
+    <!-- <div class="learning_position_absolute">
+      <div class="learning_position_absolute_box"></div>
+      <div
+        class="learning_position_absolute_box"
+        style="background-color: red; left: 80px"
+      ></div>
+      <div
+        class="learning_position_absolute_box"
+        style="background-color: brown; left: 160px"
+      ></div>
+      <div
+        class="learning_position_absolute_box"
+        style="background-color: blue; left: 200px"
+      ></div>
+    </div> -->
+
+    <!-- <div class="learning_position">
+      <a href="https://web.whatsapp.com/">
+        <i class="fa-brands fa-whatsapp"></i
+      ></a>
+    </div>
+
+    <div class="cateogory_long_parent">
+      <div class="category_long_box">
+        <img
+          alt="home"
+          src="https://i.etsystatic.com/11326925/c/1512/1201/0/310/il/582a10/3704219961/il_680x540.3704219961_ckr2.jpg"
+        />
+        <span>Home & Living</span>
+      </div>
+      <div class="category_long_box">
+        <img
+          alt="Jewelley"
+          src="https://i.etsystatic.com/5204269/c/888/706/201/265/il/462ec1/1000393416/il_680x540.1000393416_qf5c.jpg"
+        />
+        <span>Jewellery</span>
+      </div>
+      <div class="category_long_box">
+        <img
+          alt="art"
+          src="https://i.etsystatic.com/9986723/r/il/c489a7/3784663223/il_680x540.3784663223_eum8.jpg"
+        />
+        <span>Art and Collection</span>
+      </div>
+      <div class="category_long_box">
+        <img
+          alt="Clothing"
+          src="https://i.etsystatic.com/5137177/r/il/3a58e9/1359393756/il_680x540.1359393756_pui2.jpg"
+        />
+        <span>Clothing</span>
+      </div>
+      <div class="category_long_box">
+        <img
+          alt="Craft Supplies"
+          src="https://i.etsystatic.com/5694172/r/il/b56e39/480340698/il_680x540.480340698_4y6r.jpg"
+        />
+        <span>Craft Supplies</span>
+      </div>
+      <div class="category_long_box">
+        <img
+          alt="Accessories"
+          src="https://i.etsystatic.com/14367613/r/il/132de7/4895345185/il_680x540.4895345185_abr9.jpg"
+        />
+        <span>Accessories</span>
+      </div>
+    </div>
+    <div class="cateogory_long_parent">
+      <div class="category_long_box">
+        <img
+          alt="home"
+          src="https://i.etsystatic.com/11326925/c/1512/1201/0/310/il/582a10/3704219961/il_680x540.3704219961_ckr2.jpg"
+        />
+        <span>Home & Living</span>
+      </div>
+      <div class="category_long_box">
+        <img
+          alt="Jewelley"
+          src="https://i.etsystatic.com/5204269/c/888/706/201/265/il/462ec1/1000393416/il_680x540.1000393416_qf5c.jpg"
+        />
+        <span>Jewellery</span>
+      </div>
+      <div class="category_long_box">
+        <img
+          alt="art"
+          src="https://i.etsystatic.com/9986723/r/il/c489a7/3784663223/il_680x540.3784663223_eum8.jpg"
+        />
+        <span>Art and Collection</span>
+      </div>
+      <div class="category_long_box">
+        <img
+          alt="Clothing"
+          src="https://i.etsystatic.com/5137177/r/il/3a58e9/1359393756/il_680x540.1359393756_pui2.jpg"
+        />
+        <span>Clothing</span>
+      </div>
+      <div class="category_long_box">
+        <img
+          alt="Craft Supplies"
+          src="https://i.etsystatic.com/5694172/r/il/b56e39/480340698/il_680x540.480340698_4y6r.jpg"
+        />
+        <span>Craft Supplies</span>
+      </div>
+      <div class="category_long_box">
+        <img
+          alt="Accessories"
+          src="https://i.etsystatic.com/14367613/r/il/132de7/4895345185/il_680x540.4895345185_abr9.jpg"
+        />
+        <span>Accessories</span>
+      </div>
+    </div> -->
+
+    <!-- <div class="parent">
+      <div class="box"><span>1</span></div>
+      <div class="box"><span>2</span></div>
+      <div class="box"><span>3</span></div>
+      <div class="box"><span>4</span></div>
+      <div class="box"><span>5</span></div>
+      <div class="box"><span>6</span></div>
+      <div class="box"><span>7</span></div>
+      <div class="box"><span>8</span></div>
+      <div class="box"><span>9</span></div>
+      <div class="box"><span>10</span></div>
+    </div> -->
+  </body>
+</html>

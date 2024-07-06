@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- <h1>Number Methods</h1>
+        <ul>
+            <li><b>Math.round()</b> , ye number ko round off krdeta hun </li>
+            <li><b>Math.floor()</b> , ye decimal hata deta he or original number   </li>
+            <li><b>Math.ceil()</b> , 1  number add krdeta he </li>
+        </ul> -->
+
+
+        <!-- <h1 id="random">Random Number</h1>
+        <button onclick="generateOTPNumber()">Generate OTP Number</button> -->
+
+        
+        <!-- 1.Dice Game hogi
+        2.User ke paas 6 number honge
+        3.User ksi number pe click karega or ham aik number generate krenge 
+        4.Agar number match hogya to user jeet gya wrna har gya
+        5.User ke paas 10 turns hongi , if he wins 3 out of 10 he is winner otherwise looser -->
+
+        <h1>Dice Game</h1>
+        <h3 id="msg" class="msg"></h3>
+        <div class="container">
+            <div onclick="tryMyLuck(1)" class="box">1</div>
+            <div onclick="tryMyLuck(2)" class="box">2</div>
+            <div onclick="tryMyLuck(3)" class="box">3</div>
+            <div onclick="tryMyLuck(4)" class="box">4</div>
+            <div onclick="tryMyLuck(5)" class="box">5</div>
+            <div onclick="tryMyLuck(6)" class="box">6</div>
+        </div>
+        <div class="container">
+            <div class="info_box"> <b>User Number :</b> <span id="user_number">10</span>  </div>
+            <div class="info_box"> <b>Random Number :</b> <span id="random_number">3</span> </div>
+            <div id="info_box_result" class="info_box"> <b id="result">You Loss / Win</b></div>
+        </div> 
+        <div class="container">
+            <div class="info_box"> <b>Turns :</b> <span id="total">10</span> </div>
+            <div class="info_box"> <b>Win :</b><span id="win">0</span>   </div>
+            <div class="info_box"> <b>Loss :</b> <span id="loss">0</span>  </div>
+        </div> 
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+.navbar {
+  background-color: rgb(116, 17, 247, 0.2);
+}
+
+.carousel-item > img {
+  height: 450px !important;
+}

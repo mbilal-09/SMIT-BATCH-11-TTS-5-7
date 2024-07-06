@@ -1,0 +1,285 @@
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.parent {
+  min-height: 300px;
+  max-width: 600px;
+  margin: 12px auto;
+  border: 5px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* space-between -> corner mein space na do or beech mein equal dedo
+space-around -> corner mein kam space  do or beech mein equal dedo
+space-evenly  -> sab jagha se barabar dedo*/
+
+/* flex-direction
+align-items
+justify-content
+flex-wrap
+*/
+
+.box {
+  height: 98px;
+  width: 98px;
+  border: 1px solid brown;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+span {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  height: 40px;
+  background-color: beige;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 12px;
+  position: fixed;
+  top: 0;
+  width: 98.2%;
+  z-index: 1;
+}
+
+.heading {
+  margin-top: 80px;
+}
+
+.logo {
+  cursor: pointer;
+  color: rgb(133, 81, 13);
+}
+
+.nav_item {
+  cursor: pointer;
+}
+
+.food {
+  font-size: 14px;
+  margin: 0px 12px;
+  font-weight: 300;
+}
+
+.food:hover {
+  color: rgb(63, 63, 42);
+  text-decoration: underline;
+}
+
+h2 {
+  font-weight: lighter;
+  text-align: center;
+}
+
+.category_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.category_box:hover {
+  text-decoration: underline;
+}
+
+.category_box > img:hover {
+  transform: scale(1.03);
+  transition: 0.4s;
+  box-shadow: 1px 1px 1px 1px grey;
+}
+
+.category_box > img {
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+}
+.category_box > span {
+  font-weight: lighter;
+  padding-top: 5px;
+  font-size: 14px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.cateogory_parent {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.category_long_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  margin: 5px 10px;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+.category_long_box:hover {
+  box-shadow: 0px 1px 1px 1px lightgray;
+  border-radius: 5px;
+}
+
+/* .category_long_box > img:hover {
+  transform: scale(1.03);
+  transition: 0.4s;
+  box-shadow: 1px 1px 1px 1px grey;
+} */
+
+.category_long_box > img {
+  height: 120px;
+  width: 90px;
+  border-radius: 5px;
+}
+.category_long_box > span {
+  font-weight: lighter;
+  padding-top: 5px;
+  font-size: 10px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.cateogory_long_parent {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.learning_position {
+  height: 50px;
+  width: 50px;
+  background-color: lightseagreen;
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.learning_position > a > i {
+  font-size: 40px;
+  color: white;
+}
+
+.learning_position_absolute {
+  height: 300px;
+  width: 600px;
+  background-color: black;
+  color: white;
+}
+
+.learning_position_absolute_box {
+  height: 80px;
+  background-color: orange;
+  width: 200px;
+  /* position: relative; */
+}
+
+.position_absolute_parent {
+  height: 200px;
+  width: 200px;
+  border: 3px solid black;
+  margin: 0px auto;
+  position: relative;
+}
+
+.ps_child_1 {
+  height: 120px;
+  width: 100%;
+  background-color: red;
+}
+.ps_child_2 {
+  margin: 0px;
+  padding-left: 3px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 12px;
+}
+
+.ps_child_3 {
+  height: 20px;
+  /* width: 40px; */
+  background-color: #e21b70;
+  color: white;
+  padding: 2px 6px;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.ps_child_4 {
+  height: 20px;
+  /* width: 40px; */
+  background-color: rgba(226, 27, 112, 0.8);
+  color: white;
+  padding: 2px 6px;
+  position: absolute;
+  top: 35px;
+  left: 8px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.city_box {
+  height: 200px;
+  width: 200px;
+  border: 3px solid black;
+  margin: 0px auto;
+  position: relative;
+  margin: 20px;
+  z-index: 0;
+}
+
+.city_img {
+  height: 100%;
+  width: 100%;
+}
+
+.desc_box {
+  position: absolute;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  bottom: 0;
+}
+
+.city_name {
+  font-weight: bold;
+  color: white;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.city_desc {
+  font-weight: lighter;
+  font-size: 14px;
+  color: white;
+  padding-left: 5px;
+}

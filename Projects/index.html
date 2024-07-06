@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quick Stop</h1> 
+    <ul>
+        <li>1.You have to click  before 1000</li>
+        <li>2.If number matches your number then you will win.</li>
+        <li>3.If it doesnt match then you are loss.</li>
+    </ul>
+    <h1 id="number">00</h1>
+    <div>
+        <input placeholder="Add Your number" id="user_input" />
+    </div>
+    <h4 id="result">-</h4>
+   <span>
+
+       <button id="start_btn" onclick="start()">start</button>
+       <button onclick="stop()">stop</button>
+   </span>
+    <script src="app.js"></script>
+</body>
+</html>

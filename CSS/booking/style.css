@@ -1,0 +1,37 @@
+
+
+.top_container{
+    background-color: #003b95;
+}
+
+.navbar-toggler{
+    color: white !important;
+    outline: none !important;
+}
+.navbar-toggler-icon{
+    background-color: red  !important;
+    color: white !important;
+    border-color: white;
+}
+.btn{
+    height: 30px !important;
+    padding: 3px !important;
+    font-size: 13px;
+    padding: 3px 8px !important;
+}
+
+.chip_container > .btn {
+    height: 40px !important;
+    font-size: 15px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 5px 12px !important;
+    border-radius: 30px;
+    border-color: transparent !important;
+}
+
+.chip_container > .btn:hover{
+    background-color: rgba(255, 255, 255 , 0.4) !important;
+    color: white !important;
+}
