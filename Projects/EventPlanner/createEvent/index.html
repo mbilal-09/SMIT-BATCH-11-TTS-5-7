@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Event</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+      <h1 class="text-3xl font-bold mb-6 text-center">Create New Event</h1>
+      <div class="bg-white shadow-md rounded-lg p-6">
+        <form id="event_form">
+          <!-- Event Image Upload -->
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="eventImage"
+              >Event Image</label
+            >
+            <input
+              type="file"
+              id="eventImage"
+              class="w-full px-3 py-2 border rounded-md"
+            />
+          </div>
+
+          <!-- Event Title -->
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="eventTitle"
+              >Event Title</label
+            >
+            <input
+              type="text"
+              id="eventTitle"
+              placeholder="Enter event title"
+              class="w-full px-3 py-2 border rounded-md"
+            />
+          </div>
+
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="eventTitle"
+              >Event Description</label
+            >
+            <textarea
+              type="text"
+              id="eventDesc"
+              placeholder="Enter event Description"
+              class="w-full px-3 py-2 border rounded-md"
+            >
+            </textarea>
+          </div>
+
+          <!-- Event Location -->
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="eventLocation"
+              >Event Location</label
+            >
+            <input
+              type="text"
+              id="eventLocation"
+              placeholder="Enter event location"
+              class="w-full px-3 py-2 border rounded-md"
+            />
+          </div>
+
+          <!-- Event Date -->
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="eventDate"
+              >Event Date</label
+            >
+            <input
+              type="date"
+              id="eventDate"
+              class="w-full px-3 py-2 border rounded-md"
+            />
+          </div>
+
+          <!-- Event Time -->
+          <div class="mb-4">
+            <label
+              class="block text-gray-700 text-sm font-bold mb-2"
+              for="eventTime"
+              >Event Time</label
+            >
+            <input
+              type="time"
+              id="eventTime"
+              class="w-full px-3 py-2 border rounded-md"
+            />
+          </div>
+
+          <!-- Submit Button -->
+          <div class="flex justify-center">
+            <button
+              type="submit"
+              class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+            >
+              Create Event
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

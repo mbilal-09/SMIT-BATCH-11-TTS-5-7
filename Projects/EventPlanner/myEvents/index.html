@@ -25,20 +25,16 @@
           />
           <span
             class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-            >Event Planner</span
+            >My Events</span
           >
         </a>
         <div class="flex items-center space-x-6 rtl:space-x-reverse">
-          <span id="myevents_btn">
-            <a
-              href="myEvents/index.html"
-              class="text-sm text-gray-500 dark:text-white hover:underline"
-              >My Events</a
-            >
-          </span>
-          <span id="create_event_btn">
-            <a href="createEvent/index.html">Create Event</a>
-          </span>
+          <a
+            href="tel:5541251234"
+            class="text-sm text-gray-500 dark:text-white hover:underline"
+            >(555) 412-1234</a
+          >
+          <a href="../createEvent/index.html">Create Event</a>
 
           <a href="/profile/index.html">
             <img
@@ -64,31 +60,9 @@
         id="events_cards_container"
         class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
       >
-        <!-- Event Card -->
-        <!-- <div class="bg-white shadow-md rounded-lg overflow-hidden">
-          <img
-            src="https://via.placeholder.com/400x200"
-            alt="Event Image"
-            class="w-full h-48 object-cover"
-          />
-          <div class="p-4">
-            <h2 class="text-xl font-bold mb-2">Event Title</h2>
-            <p class="text-gray-600 mb-2">Time: July 15, 2024, 3:00 PM</p>
-            <p class="text-gray-600 mb-2">Creator: John Doe</p>
-            <p class="text-gray-600 mb-2">Location: New York, NY</p>
-            <div class="flex justify-between items-center">
-              <button
-                class="bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-600"
-              >
-                Like
-              </button>
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
 
-    <button id="logout_btn">Logout</button>
     <script src="app.js" type="module"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css"
