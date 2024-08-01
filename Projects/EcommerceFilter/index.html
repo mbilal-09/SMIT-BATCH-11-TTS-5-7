@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .primary {
+        @apply text-blue-500;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto p-6">
+      <div class="flex space-x-4">
+        <!-- Filters Div -->
+        <div class="w-1/4 bg-white p-4 rounded-lg shadow-lg">
+          <h2 class="text-xl font-bold primary">Filters</h2>
+          <div class="mt-4">
+            <label class="block text-gray-700">Category</label>
+            <select
+              id="categoryFilter"
+              class="w-full p-2 border border-gray-300 rounded mt-2"
+            >
+              <option value="All">All</option>
+              <!-- Categories will be populated here -->
+            </select>
+          </div>
+          <div class="mt-4">
+            <label class="block text-gray-700">Available Country</label>
+            <select
+              id="countryFilter"
+              class="w-full p-2 border border-gray-300 rounded mt-2"
+            >
+              <option value="USA">USA</option>
+              <!-- Countries will be populated here -->
+            </select>
+          </div>
+          <div class="mt-4">
+            <label class="block text-gray-700">Price</label>
+            <input
+              type="number"
+              id="priceFilter"
+              class="w-full p-2 border border-gray-300 rounded mt-2"
+              placeholder="Max Price"
+            />
+          </div>
+          <div class="mt-4">
+            <label class="block text-gray-700">Rating</label>
+            <input
+              type="number"
+              id="ratingFilter"
+              class="w-full p-2 border border-gray-300 rounded mt-2"
+              placeholder="Min Rating"
+              step="0.1"
+              max="5"
+              min="0"
+            />
+          </div>
+          <div class="mt-4">
+            <label class="block text-gray-700">Start At</label>
+            <input
+              type="number"
+              id="startAtFilter"
+              class="w-full p-2 border border-gray-300 rounded mt-2"
+              placeholder="Min Price"
+            />
+          </div>
+          <div class="mt-4">
+            <button
+              id="filter_btn"
+              class="w-full bg-blue-500 text-white p-2 rounded mt-2"
+            >
+              Apply Filters
+            </button>
+          </div>
+        </div>
+
+        <!-- Products Div -->
+        <div class="w-3/4 bg-white p-4 rounded-lg shadow-lg">
+          <h2 class="text-xl font-bold primary">Products</h2>
+          <div id="products" class="grid grid-cols-2 gap-4 mt-4">
+            <!-- Products will be displayed here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
