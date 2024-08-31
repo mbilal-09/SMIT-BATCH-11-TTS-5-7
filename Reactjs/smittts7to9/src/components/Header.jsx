@@ -1,4 +1,11 @@
+import { Link, useNavigate } from "react-router-dom";
+
 function Header() {
+  const navigate = useNavigate();
+
+  const goToContactUs = () => {
+    navigate("/contact");
+  };
   return (
     <header className="text-gray-600 body-font">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -15,13 +22,21 @@ function Header() {
           >
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
           </svg>
-          <span className="ml-3 text-xl">Tailblocks</span>
+          <span className="ml-3 text-xl">Headers</span>
         </a>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-          <a className="mr-5 hover:text-gray-900">First Link</a>
-          <a className="mr-5 hover:text-gray-900">Second Link</a>
-          <a className="mr-5 hover:text-gray-900">Third Link</a>
-          <a className="mr-5 hover:text-gray-900">Fourth Link</a>
+          <Link to="/useState" className="mr-5 hover:text-gray-900">
+            Use State
+          </Link>
+          <Link to="/useEffect" className="mr-5 hover:text-gray-900">
+            Products
+          </Link>
+          <Link to="/about" className="mr-5 hover:text-gray-900">
+            About Us
+          </Link>
+          <div onClick={goToContactUs} className="mr-5 hover:text-gray-900">
+            Contact Us
+          </div>
         </nav>
         <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
           Button

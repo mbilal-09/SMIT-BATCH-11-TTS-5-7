@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import Heading from "./src/components/Heading";
+import Heading from "../components/Heading";
+import { Link } from "react-router-dom";
 
-function UseEffect() {
+function Products() {
   const [products, setProducts] = useState([]);
   const [search, setSearch] = useState("");
   useEffect(() => {
@@ -25,10 +26,12 @@ function UseEffect() {
         className="p-2 border rounded w-full mx-auto my-2"
       />
       {filtered.map((data) => (
-        <Heading id={data.id} title={data.title} key={data.id} />
+        <Link to={`/products/${data.title.split(" ").join("-")}/id/${data.id}`}>
+          <Heading id={data.id} title={data.title} key={data.id} />
+        </Link>
       ))}
     </div>
   );
 }
 
-export default UseEffect;
+export default Products;
