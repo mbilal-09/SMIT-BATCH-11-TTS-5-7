@@ -17,7 +17,7 @@ function AppRouter() {
           <Route path="/about" element={<About />} />
           <Route path="/useState" element={<UseState />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/products/:title/id/:id" element={<ProductDetails />} />
+          <Route path="/product/:id" element={<ProductDetails />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

@@ -1,35 +1,63 @@
 import { useEffect, useState } from "react";
-import Heading from "../components/Heading";
-import { Link } from "react-router-dom";
+import ProductCard from "../components/ProductCard";
+import Chip from "../components/Chip";
 
 function Products() {
   const [products, setProducts] = useState([]);
-  const [search, setSearch] = useState("");
+  const [categories, setCategories] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [chosenCategory, setChosenCategory] = useState("All");
+
   useEffect(() => {
-    fetchProducts();
+    console.log("Category Changes");
+    const url =
+      chosenCategory == "All"
+        ? "https://dummyjson.com/products"
+        : `https://dummyjson.com/products/category/${chosenCategory}`;
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => {
+        setProducts(data.products);
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
+  }, [chosenCategory]);
+
+  useEffect(() => {
+    fetch("https://dummyjson.com/products/categories")
+      .then((res) => res.json())
+      .then((data) => {
+        setCategories(data);
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
   }, []);
 
-  const fetchProducts = () => {
-    fetch("https://fakestoreapi.com/products")
-      .then((res) => res.json())
-      .then((products) => setProducts(products));
-  };
-  const filtered = products.filter((data) =>
-    data.title.toLowerCase().includes(search.toLowerCase())
-  );
-  console.log(products);
   return (
     <div className="container mx-auto">
-      <input
-        placeholder="Search"
-        onChange={(e) => setSearch(e.target.value)}
-        className="p-2 border rounded w-full mx-auto my-2"
-      />
-      {filtered.map((data) => (
-        <Link to={`/products/${data.title.split(" ").join("-")}/id/${data.id}`}>
-          <Heading id={data.id} title={data.title} key={data.id} />
-        </Link>
-      ))}
+      {loading ? (
+        <h1 className="text-center text-3xl">Loading...</h1>
+      ) : (
+        <div>
+          <div className=" overflow-x-scroll">
+            <Chip isChosen={chosenCategory === "All"} title={"All"} />
+            {categories.map((category) => (
+              <Chip
+                isChosen={chosenCategory === category.slug}
+                onClick={() => setChosenCategory(category.slug)}
+                key={category.slug}
+                title={category.name}
+              />
+            ))}
+          </div>
+
+          <div className="flex flex-wrap">
+            {products.map((data) => (
+              <ProductCard info={data} key={data.id} />
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
