@@ -1,7 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Button from "../components/Button";
+import { UserContext } from "../context/UserContext";
 
 function UseState() {
+  const { user } = useContext(UserContext);
+  console.log("user->", user);
   const [num, setNum] = useState(10);
   const [username, setUsername] = useState("");
   const [users, setUsers] = useState(["TEST"]);
@@ -17,7 +20,7 @@ function UseState() {
   return (
     <div className="flex flex-col items-center m-20">
       <h1 className="text-[50px] text-center my-3">
-        Hello <span className="underline">{username}</span>{" "}
+        Hello <span className="underline">{user.email}</span>{" "}
       </h1>
       <div>
         <input

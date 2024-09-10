@@ -1,10 +1,19 @@
+import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { UserContext } from "../context/UserContext";
+import { signOut } from "firebase/auth";
+import { auth } from "../utils/firebase";
 
 function Header() {
+  const { user } = useContext(UserContext);
   const navigate = useNavigate();
 
   const goToContactUs = () => {
     navigate("/contact");
+  };
+
+  const handleSignOut = async () => {
+    await signOut(auth);
   };
   return (
     <header className="text-gray-600 body-font">
@@ -38,20 +47,17 @@ function Header() {
             Contact Us
           </div>
         </nav>
-        <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-          Button
-          <svg
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            className="w-4 h-4 ml-1"
-            viewBox="0 0 24 24"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
-        </button>
+
+        {user.isLogin ? (
+          <div className="flex items-center">
+            <h1 className="mx-3">{user.email}</h1>
+            <button onClick={handleSignOut}>Signout</button>
+          </div>
+        ) : (
+          <Link to="/signup">
+            <button>Sign up</button>
+          </Link>
+        )}
       </div>
     </header>
   );
