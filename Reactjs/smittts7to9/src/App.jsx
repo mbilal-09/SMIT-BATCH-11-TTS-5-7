@@ -1,11 +1,14 @@
+import { useContext } from "react";
 import "./App.css";
 import Card from "./components/Card";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Steps from "./components/Steps";
+import { UserContext } from "./context/UserContext";
 
 function App() {
+  const { user } = useContext(UserContext);
   const items = [
     {
       title: "Macbook",
@@ -47,6 +50,7 @@ function App() {
   return (
     <>
       <div className="container px-5 py-24 mx-auto">
+        <div className="text-5xl my-5 text-center">Hello {user.username}</div>
         <div className="flex flex-wrap -m-4">
           {items.map((data) => (
             <Card

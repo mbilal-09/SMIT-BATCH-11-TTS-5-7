@@ -1,8 +1,12 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import ProductCard from "../components/ProductCard";
 import Chip from "../components/Chip";
+import { ThemeContext } from "../context/ThemeContext";
 
 function Products() {
+  const { theme } = useContext(ThemeContext);
+  console.log("theme in product page=>", theme);
+
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -38,7 +42,7 @@ function Products() {
       {loading ? (
         <h1 className="text-center text-3xl">Loading...</h1>
       ) : (
-        <div>
+        <div className={`${theme == 'light' ? "bg-white" : 'bg-black text-white'}`}>
           <div className=" overflow-x-scroll">
             <Chip isChosen={chosenCategory === "All"} title={"All"} />
             {categories.map((category) => (
