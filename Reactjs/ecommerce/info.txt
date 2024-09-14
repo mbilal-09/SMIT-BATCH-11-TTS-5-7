@@ -1,0 +1,11 @@
+1st Step
+Installation of Libraries
+antd , firebase , axios , react-router , tailwindcss
+
+2nd Step
+Pages banaen
+Router ke andar saare pages dedye
+
+
+Install Icon
+npm install @ant-design/icons --save

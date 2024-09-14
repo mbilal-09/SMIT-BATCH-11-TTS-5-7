@@ -7,6 +7,7 @@ import NotFound from "./pages/NotFound";
 import Products from "./pages/Products";
 import ProductDetails from "./pages/ProductDetail";
 import Profile from "./pages/Profile";
+import Material from "./pages/Material";
 
 function AppRouter() {
   return (
@@ -15,6 +16,7 @@ function AppRouter() {
         <Header />
         <Routes>
           <Route index element={<App />} />
+          <Route path="/material" element={<Material />} />
           <Route path="/about" element={<About />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/useState" element={<UseState />} />

@@ -33,6 +33,9 @@ function Header() {
           <span className="ml-3 text-xl">Headers</span>
         </Link>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <Link to="/material" className="mr-5 hover:text-gray-900">
+            Material UI
+          </Link>
           <Link to="/useState" className="mr-5 hover:text-gray-900">
             Use State
           </Link>
