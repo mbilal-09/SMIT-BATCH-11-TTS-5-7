@@ -5,6 +5,8 @@ import ProductCard from "../components/ProductCard";
 import { SearchOutlined } from "@ant-design/icons";
 
 function Products() {
+
+  
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
   const [skip, setSkip] = useState(0);
@@ -48,7 +50,9 @@ function Products() {
       </div>
       <Row gutter={16} justify={"center"}>
         {products.map((data) => (
-          <ProductCard key={data.id} item={data} />
+          <ProductCard 
+          
+          key={data.id} item={data} />
         ))}
       </Row>
       <div className="flex justify-center my-8">
