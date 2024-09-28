@@ -3,6 +3,7 @@
 // server side page ka console terminal pe show hoga
 // server side pe koi bhe react hook use nahn kr sakte.
 
+import PostCard from "@/components/PostCard";
 import Link from "next/link";
 
 export default async function Home() {
@@ -12,15 +13,7 @@ export default async function Home() {
   // console.log("posts=>", posts);
   return (
     <div className="m-2">
-      {posts.map((data) => (
-        <Link key={data.id} href={`/${data.id}`}>
-          <div className="p-2 border rounded my-2">
-            <h1 className="text-bold text-2xl">Post {data.id}</h1>
-            <h1 className="text-bold text-2xl">{data.title}</h1>
-            <h1 className="font-normal my-2">{data.body}</h1>
-          </div>
-        </Link>
-      ))}
+      {posts.map((data) =><PostCard data={data} />)}
     </div>
   );
 }
