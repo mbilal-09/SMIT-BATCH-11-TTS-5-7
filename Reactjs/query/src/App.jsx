@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router";
 
 const fetchTodo = () =>
   new Promise((resolve, reject) => {
@@ -24,6 +25,8 @@ const fetchProducts = async () => {
   return await response.json();
 };
 function App() {
+  const navigate = useNavigate();
+
   const {
     data: todos,
     isLoading,
@@ -53,7 +56,15 @@ function App() {
     >
       {isLoadingProducts ? <h1>loading...</h1> : null}
       {products?.map((obj, ind) => (
-        <h4 key={ind}>{obj.title}</h4>
+        <h4
+          key={ind}
+          style={{
+            cursor: "pointer",
+          }}
+          onClick={() => navigate(`/product/${obj.id}`)}
+        >
+          {obj.title}
+        </h4>
       ))}
     </div>
   );
