@@ -2,7 +2,7 @@ const { default: Link } = require("next/link");
 
 const PostCard = ({ data }) => {
   return (
-    <Link key={data.id} href={`/${data.id}`}>
+    <Link key={data.id} href={`/post/${data.id}`}>
       <div className="p-2 border rounded my-2">
         <h1 className="text-bold text-2xl">Post {data.id}</h1>
         <h1 className="text-bold text-2xl">{data.title}</h1>
